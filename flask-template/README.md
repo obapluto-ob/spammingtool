@@ -14,26 +14,54 @@ You can fork this repo and use it for your own educational or research purposes.
 
 ### Prerequisites
 
-- Python 3.8+
+- Python 3.8+ (see install guide below)
 - [pip](https://pip.pypa.io/en/stable/installation/)
 - Gmail account with [App Passwords enabled](https://support.google.com/accounts/answer/185833?hl=en)
 - (Recommended) VS Code with:
   - [Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
   - [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
 
+### How to Install Python
+
+#### **Windows (PowerShell):**
+1. Download Python from [python.org](https://www.python.org/downloads/windows/).
+2. Run the installer and check **"Add Python to PATH"**.
+3. Open PowerShell and check installation:
+   ```powershell
+   python --version
+   pip --version
+   ```
+
+#### **Linux/macOS (Terminal):**
+- **Linux:**
+  ```sh
+  sudo apt update
+  sudo apt install python3 python3-pip
+  ```
+- **macOS:**
+  ```sh
+  brew install python
+  ```
+
 ### Setup
 
 1. **Fork and clone this repo:**
    ```sh
-   git clone https://github.com/your-username/email-tool.git
-   cd email-tool
+   git clone https://github.com/obapluto-ob/spammingtool.git
+   cd spammingtool/email_tool
    ```
 
 2. **Create and activate a virtual environment:**
-   ```sh
-   python3 -m venv venv
-   source venv/bin/activate
-   ```
+   - **Windows (PowerShell):**
+     ```powershell
+     python -m venv venv
+     .\venv\Scripts\Activate
+     ```
+   - **Linux/macOS:**
+     ```sh
+     python3 -m venv venv
+     source venv/bin/activate
+     ```
 
 3. **Install dependencies:**
    ```sh
@@ -71,3 +99,7 @@ You can fork this repo and use it for your own educational or research purposes.
 ## Contributing
 
 Feel free to fork, improve, and submit pull requests!
+
+## License
+
+MIT License
